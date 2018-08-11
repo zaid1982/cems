@@ -1,0 +1,2 @@
+2018/02/20 02:38:18pm [C:\Users\User\Google Drive\php\cems\library\sql.php:2702] - (ErrCode:0098) [Class_sql:get_sql:2698] - Sql not exist : vw_qa_info
+2018/02/20 02:38:34pm [C:\Users\User\Google Drive\php\cems\library\sql.php:2702] - (ErrCode:0098) [Class_sql:get_sql:2698] - Sql not exist : vw_qa_info

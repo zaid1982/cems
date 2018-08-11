@@ -1,0 +1,4 @@
+2018/02/28 10:43:49am [C:\Users\Zaid\Google Drive\php\cems\scheduler\gen_compliance_summary.php:70] - (ErrCode:0005) [Class_db:db_select:319] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00, INTERVAL @i:=@i+1 DAY) AS DAY
+                FROM (
+               ' at line 1
+2018/02/28 10:45:47am [C:\Users\Zaid\Google Drive\php\cems\scheduler\gen_compliance_summary.php:70] - (ErrCode:0005) [Class_db:db_select:319] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00)) as mainTable' at line 10

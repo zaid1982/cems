@@ -1,0 +1,4 @@
+2017/12/28 09:41:06am [C:\Users\Zaid\Google Drive\php\cems\scheduler\gen_pool_summary.php:40] - (ErrCode:0005) [Class_db:db_select:319] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[tablename] 
+                WHERE data_timeCreated >= '>=2015-01-01 00:00:00' ' at line 14
+2017/12/28 09:42:28am [C:\Users\Zaid\Google Drive\php\cems\scheduler\gen_pool_summary.php:40] - (ErrCode:0005) [Class_db:db_select:319] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[tablename] 
+                WHERE data_timeCreated >= '2015-01-01 00:00:00' AN' at line 14

@@ -1,0 +1,11 @@
+2017/08/01 03:19:47pm [C:\Users\Zaid\Google Drive\php\cems\process\p_pool_data.php:40] - (ErrCode:5816) [31] - Parameter wfTask_id empty.
+2017/08/01 07:59:29pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:19] - URL received MXwzfDIwMTctMDgtMDJ8MDA6MjA6MjB8My4yMjN8fHx8fHwzMi4zMnwxMS4yMQ== - 1|3|2017-08-02|00:20:20|3.223||||||32.32|11.21
+2017/08/01 07:59:29pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:64] - Insert data_30_17; indAll_id = 3, data_timestamp = 2017-08-02 00:20:20
+2017/08/01 08:00:27pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:19] - URL received MXwzfDIwMTctMDgtMDJ8MDA6MjA6MDB8My4yMjN8fHx8fHwzMi4zMnwxMS4yMQ== - 1|3|2017-08-02|00:20:00|3.223||||||32.32|11.21
+2017/08/01 08:00:27pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:64] - Insert data_30_17; indAll_id = 3, data_timestamp = 2017-08-02 00:20:00
+2017/08/01 08:01:58pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:19] - URL received MXwzfDIwMTctMDgtMDJ8MDA6MjA6MDB8My4yMjN8fHx8fHwzMi4zMnwxMS4yMQ== - 1|3|2017-08-02|00:20:00|3.223||||||32.32|11.21
+2017/08/01 08:01:58pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:64] - Insert data_30_17; indAll_id = 3, data_timestamp = 2017-08-02 00:20:00
+2017/08/01 08:01:58pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:76] - Insert data_01_17_3; indAll_id = 3, data_timestamp = 2017-08-02 00:20:00
+2017/08/01 08:02:10pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:19] - URL received MXwzfDIwMTctMDgtMDJ8MDA6MjA6MDB8My4yMjN8fHx8fHwzMi4zMnwxMS4yMQ== - 1|3|2017-08-02|00:20:00|3.223||||||32.32|11.21
+2017/08/01 08:02:10pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:68] - Update data_30_17; indAll_id = 3, data_timestamp = 2017-08-02 00:20:00
+2017/08/01 08:02:10pm [C:\Users\User\Google Drive\php\cems\process\p_pool_data.php:80] - Insert data_01_17_3; indAll_id = 3, data_timestamp = 2017-08-02 00:20:00

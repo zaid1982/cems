@@ -1,0 +1,2 @@
+2017/09/27 11:38:10am [C:\Users\Zaid\Google Drive\php\cems\library\sql.php:2461] - (ErrCode:0098) [Class_sql:get_sql:2457] - Sql not exist : vw_gca_chart_3
+2017/09/27 03:35:46pm [C:\Users\Zaid\Google Drive\php\cems\library\sql.php:2492] - (ErrCode:0098) [Class_sql:get_sql:2488] - Sql not exist : vw_gca_count_active

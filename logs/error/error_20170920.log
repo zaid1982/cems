@@ -1,0 +1,3 @@
+2017/09/20 11:38:57am [C:\Users\Zaid\Google Drive\php\cems\library\sql.php:2248] - (ErrCode:0098) [Class_sql:get_sql:2244] - Sql not exist : vw_gcs_count_approved
+2017/09/20 11:39:16am [C:\Users\Zaid\Google Drive\php\cems\library\sql.php:2248] - (ErrCode:0098) [Class_sql:get_sql:2244] - Sql not exist : vw_gcs_count_approved
+2017/09/20 06:11:15pm [C:\Users\Zaid\Google Drive\php\cems\library\sql.php:2272] - (ErrCode:0098) [Class_sql:get_sql:2268] - Sql not exist : vw_gcs_chart_2

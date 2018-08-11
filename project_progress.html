@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Project Progress</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+        
+    </head>
+    <body>
+        <div>
+            <div id="container" style="width: 400px; height: 400px; margin: 0 auto"></div>        
+            <div>
+                <img src="img/project_progress/timeline_iremote.PNG" style="align-content: center; width: 100%; padding-bottom: 20px" alt=""/>
+            </div>
+            <div>
+                <img src="img/project_progress/timeline_sprm.PNG" style="align-content: center; width: 100%; padding-bottom: 20px" alt=""/>
+            </div>
+            <div>
+                <img src="img/project_progress/timeline_forensic.PNG" style="align-content: center; width: 100%; padding-bottom: 20px" alt=""/>
+            </div>
+        </div>
+        <script type="text/javascript"> 
+            Highcharts.chart('container', {
+
+                chart: {
+                    type: 'solidgauge',
+                    marginTop: 50
+                },
+
+                title: {
+                    text: 'Apps Current Progress',
+                    style: {
+                        fontSize: '24px'
+                    }
+                },
+
+                tooltip: {
+                    borderWidth: 0,
+                    backgroundColor: 'none',
+                    shadow: false,
+                    style: {
+                        fontSize: '16px'
+                    },
+                    pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span>',
+                    positioner: function (labelWidth) {
+                        return {
+                            x: 200 - labelWidth / 2,
+                            y: 180
+                        };
+                    }
+                },
+
+                pane: {
+                    startAngle: 0,
+                    endAngle: 360,
+                    background: [{ // Track for Move
+                        outerRadius: '112%',
+                        innerRadius: '88%',
+                        backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }, { // Track for Exercise
+                        outerRadius: '87%',
+                        innerRadius: '63%',
+                        backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }, { // Track for Stand
+                        outerRadius: '62%',
+                        innerRadius: '38%',
+                        backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }]
+                },
+
+                yAxis: {
+                    min: 0,
+                    max: 100,
+                    lineWidth: 0,
+                    tickPositions: []
+                },
+
+                plotOptions: {
+                    solidgauge: {
+                        dataLabels: {
+                            enabled: false
+                        },
+                        linecap: 'round',
+                        stickyTracking: false,
+                        rounded: true
+                    }
+                },
+                credits:{
+                  enabled:false
+                },
+
+                series: [{
+                    name: 'JAS iRemote',
+                    data: [{
+                        color: Highcharts.getOptions().colors[0],
+                        radius: '112%',
+                        innerRadius: '88%',
+                        y: 85
+                    }]
+                }, {
+                    name: 'SPRM eSTK',
+                    data: [{
+                        color: Highcharts.getOptions().colors[1],
+                        radius: '87%',
+                        innerRadius: '63%',
+                        y: 70
+                    }]
+                }, {
+                    name: 'Forensic PRIME',
+                    data: [{
+                        color: Highcharts.getOptions().colors[2],
+                        radius: '62%',
+                        innerRadius: '38%',
+                        y: 30
+                    }]
+                }]
+            },
+
+            /**
+             * In the chart load callback, add icons on top of the circular shapes
+             */
+            function callback() {
+
+                // Move icon
+                this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8])
+                    .attr({
+                        'stroke': '#303030',
+                        'stroke-linecap': 'round',
+                        'stroke-linejoin': 'round',
+                        'stroke-width': 2,
+                        'zIndex': 10
+                    })
+                    .translate(190, 26)
+                    .add(this.series[2].group);
+
+                // Exercise icon
+                this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8,
+                        'M', 8, -8, 'L', 16, 0, 8, 8])
+                    .attr({
+                        'stroke': '#ffffff',
+                        'stroke-linecap': 'round',
+                        'stroke-linejoin': 'round',
+                        'stroke-width': 2,
+                        'zIndex': 10
+                    })
+                    .translate(190, 61)
+                    .add(this.series[2].group);
+
+                // Stand icon
+                this.renderer.path(['M', 0, 8, 'L', 0, -8, 'M', -8, 0, 'L', 0, -8, 8, 0])
+                    .attr({
+                        'stroke': '#303030',
+                        'stroke-linecap': 'round',
+                        'stroke-linejoin': 'round',
+                        'stroke-width': 2,
+                        'zIndex': 10
+                    })
+                    .translate(190, 96)
+                    .add(this.series[2].group);
+            });
+        </script>   
+    </body>
+    
+</html>
