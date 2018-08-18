@@ -182,7 +182,11 @@
             mpf_load_type = load_type;
             mpf_otable = otable;
             $('#mpfb_user_id').val(user_id);     
-            var profile = f_get_general_info('vw_profile', {user_id:user_id}, 'mpfa'); 
+            var profile = f_get_general_info('vw_profile', {user_id:user_id}, 'mpfa');             
+            if (profile.user_type == 1)
+                $('#mpf_li_b').addClass('hidden');
+            else
+                $('#mpf_li_b').removeClass('hidden');
             $('#mpfb_user_password').val(profile.user_password); 
             $('#mpfb_secQues_id').val(profile.secQues_id); 
             $('#mpfb_user_security_answer').val(profile.user_security_answer); 

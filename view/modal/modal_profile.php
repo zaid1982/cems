@@ -14,7 +14,7 @@
                         <li>
                             <a href="#mpf_tabs-a">User Profile</a>
                         </li>
-                        <li>
+                        <li id="mpf_li_b">
                             <a href="#mpf_tabs-b">Change Password</a>
                         </li>
                     </ul>                        

@@ -9,8 +9,8 @@ $config = parse_ini_file('../library/config.ini');
 $log_dir = $config['log_dir'];
 
 function log_debug($line, $msg, $log_dir) {
-    $debugMsg = date("Y/m/d h:i:sa") . " [" . __FILE__ . ":" . $line . "] - " . $msg . "\r\n";
-    error_log($debugMsg, 3, $log_dir.'/debug/debug_' . date("Ymd") . '.log');
+    $debugMsg = date("Y/m/d h:i:sa")." [".__FILE__.":".$line."] - ".$msg."\r\n";
+    error_log($debugMsg, 3, $log_dir.'/debug/debug_'.date("Ymd").'.log');
 }
 
 try {     

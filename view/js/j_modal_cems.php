@@ -1345,18 +1345,18 @@
                 f_notify(2, 'Error', param_desc + ' not covered by Supplier\'s Equipment. Please make sure all Input Parameter covered by selected CEMS Equipment analyzers2');    
                 return false;
             }
-            mce_check_1 = false; mce_check_2 = false;
-            $.each(data_mce_docNormalize, function(u){
-                if (data_mce_docNormalize[u].documentName_id == '15')        mce_check_1 = true;
-                else if (data_mce_docNormalize[u].documentName_id == '16')   mce_check_2 = true;
-                else if (data_mce_docNormalize[u].documentName_id == '26')   mce_check_3 = true;
-            });
-            if (!mce_check_1 || !mce_check_2 || !mce_check_3) {
-                $('#mce_wizard').wizard('selectedItem', { step:3 });
-                $('#mce_btn_add_docNormalize').focus();
-                f_notify(2, 'Error', 'Please make sure all Normalization Attachment Type provided!');    
-                return false;
-            }
+//            mce_check_1 = false; mce_check_2 = false; mce_check_3 = false;
+//            $.each(data_mce_docNormalize, function(u){
+//                if (data_mce_docNormalize[u].documentName_id == '15')        mce_check_1 = true;
+//                else if (data_mce_docNormalize[u].documentName_id == '16')   mce_check_2 = true;
+//                else if (data_mce_docNormalize[u].documentName_id == '26')   mce_check_3 = true;
+//            });
+//            if (!mce_check_1 || !mce_check_2 || !mce_check_3) {
+//                $('#mce_wizard').wizard('selectedItem', { step:3 });
+//                $('#mce_btn_add_docNormalize').focus();
+//                f_notify(2, 'Error', 'Please make sure all Normalization Attachment Type provided!');    
+//                return false;
+//            }
             if (data_mce_personnel.length == 0) {
                 $('#mce_wizard').wizard('selectedItem', { step:4 });
                 $('#mce_btn_add_personnel').focus();
