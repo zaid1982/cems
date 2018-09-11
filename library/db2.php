@@ -84,7 +84,7 @@ class Class_db2{
                     $where_str .= "$item = ".$_SESSION['user_id']." AND ";
                 } else if ($l1 == '%') {
                     $where_str .= "$item like '".str_replace("'", "`", $value)."' AND ";
-                } else if ($l1 == '(') {
+                } else if ($l1 == '(' && $l2 != '(B') {
                     $where_str .= "$item in $value AND ";
                 } else if ($l2 == 'N(') {
                     $r1 = substr($value, 1);

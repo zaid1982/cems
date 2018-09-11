@@ -1096,12 +1096,12 @@
             }
             var chk_doc_27 = f_get_general_info_multiple('t_consultant_docSupport', {consultant_id:$('#mac_consultant_id').val(), documentName_id:'27'});
             if(chk_doc_27.length === 0) {
-                f_notify(2, 'Error', 'Please make Company Profile uploaded from Consultant Information menu!');    
+                f_notify(2, 'Error', 'Please upload Company Profile on Consultant Information menu!');    
                 return false;
             }
             var chk_doc_28 = f_get_general_info_multiple('t_consultant_docSupport', {consultant_id:$('#mac_consultant_id').val(), documentName_id:'28'});
             if(chk_doc_28.length === 0) {
-                f_notify(2, 'Error', 'Please make Registry of Companies uploaded from Consultant Information menu!');    
+                f_notify(2, 'Error', 'Please upload Registration of Companies on Consultant Information menu!');    
                 return false;
             }
             $("#mac_funct").val('save_consultant_cems');

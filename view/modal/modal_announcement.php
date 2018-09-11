@@ -34,7 +34,7 @@
                                 <div class="form-group no-margin margin-bottom-5">
                                     <label class="col-md-4 control-label"><strong>Status</strong></label>
                                     <div class="col-md-8 control-label text-align-left">
-                                        Waiting
+                                        New
                                     </div>
                                 </div>
                             </div>

@@ -411,11 +411,11 @@
                         f_dataTable_draw(maw_otable_checking, data_maw_checking, 'datatable_maw_checking', 4);
                     } else if (maw_otable == 'ctv' || maw_otable == 'itv') {
                         $('#maw_result').html('Verify');     
-                        $('#maw_return').html('Return to Pegawai Pengesah');
+                        $('#maw_return').html('Return to Pegawai Pemproses');
                         f_maw_checklist_view (task_info.wfTrans_id); 
                     } else if (maw_otable == 'cta' || maw_otable == 'ita') {
                         $('#maw_result').html('Approve');    
-                        $('#maw_return').html('Return to Pegawai Pengesah');
+                        $('#maw_return').html('Return to Pegawai Pemproses');
                         f_maw_checklist_view (task_info.wfTrans_id); 
                     }
                 } else if (maw_load_type == 3) {

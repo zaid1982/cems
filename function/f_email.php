@@ -399,6 +399,7 @@ class Class_email {     // 17++
             $message .= "Status : <strong>Approved</strong><br>";
             $message .= "<p>Kindly login to iRemote System to review the application.</p>";
             $message .= "<p><a href=\"http://iremote.doe.gov.my\">http://iremote.doe.gov.my</a></p>";
+			$message .= "<p>To download agent execution file. Please click <a href=\"http://iremote.doe.gov.my/agent/JabatanAlamSekitar.exe\">here.</a></p>";
             $message .= "<br><br><br>";
             $message .= "<i>Note: This is and automail from iRemote System. Please do not reply to the email.</i>";
             $message .= "</html></body>";
@@ -427,6 +428,7 @@ class Class_email {     // 17++
             $message .= "Status : <strong>Approved</strong><br>";
             $message .= "<p>Kindly login to iRemote System to review the application.</p>";
             $message .= "<p><a href=\"http://iremote.doe.gov.my\">http://iremote.doe.gov.my</a></p>";
+			$message .= "<p>To download the agent execution file, please click <a href=\"http://iremote.doe.gov.my/agent\">here</a></p>";
             $message .= "<br><br><br>";
             $message .= "<i>Note: This is and automail from iRemote System. Please do not reply to the email.</i>";
             $message .= "</html></body>";

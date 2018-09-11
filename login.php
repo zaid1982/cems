@@ -71,9 +71,9 @@ $activation_code = isset($_GET['activationCode']) ? $_GET['activationCode'] : ''
             </div>
             <div class="pull-right hidden-mobile hidden-md hidden-sm hidden-xs">  
                 <br>
-                <h12 class="about-heading txt-color-gray" style="text-align:center">Jabatan Alam Sekitar, Kementerian Sumber Asli Dan Alam Sekitar Aras 3,</h12><br>
+                <h12 class="about-heading txt-color-gray" style="text-align:center">Jabatan Alam Sekitar, Kementerian Tenaga, Sains, Teknologi, Alam Sekitar & Perubahan Iklim</h12><br>
 
-                <h12 class="about-heading txt-color-gray" style="text-align:center">Podium 3, Wisma Sumber Asli, No.25, Persiaran Perdana, <br>Presint 4, 62574 W.P. PUTRAJAYA</h12>          <br>
+                <h12 class="about-heading txt-color-gray" style="text-align:center">Aras 1-4, Podium 2 & 3, Wisma Sumber Asli, No.25, Persiaran Perdana, <br>Presint 4, 62574 W.P. PUTRAJAYA</h12>          <br>
                 <h12 class="about-heading txt-color-gray" style="text-align:center">General Line: 03 - 8871 2000 / 8871 2200 <br>Fax Number  : 03 - 8889 1973/75</h12>
             </div>
         </header>
@@ -144,9 +144,11 @@ $activation_code = isset($_GET['activationCode']) ? $_GET['activationCode'] : ''
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <h7 style="font-family: verdana; font-style: italic; 
                                     font-weight:bold; letter-spacing: 1px; background-color: gold">Announcement!</h7></br>
+								<marquee scrolldelay="350" direction="up">
                                 <h7 class="txt-color-black" style="text-align:justify">
                                    Industrial premises that use Continuous Monitoring System (CEMS) / Predictive Emission Monitoring System (PEMS) services are required to register.</br></br>
                                 </h7>
+								</marquee>
                             </div>
                         </div>                         
                     </div>
@@ -207,10 +209,10 @@ $activation_code = isset($_GET['activationCode']) ? $_GET['activationCode'] : ''
                                     </ul>
                                 </div>
                                 <br><br>
-                                <a href="javascript:void(0);" class="btn btn-success active btn-group-justified btn">Guideline</a>
+                                <a href="https://www.doe.gov.my/portalv1/info-untuk-industri/pengawasan-udara-cems/garis-panduan-cems/377" target="_blank" class="btn btn-success active btn-group-justified btn">Guidelines</a>
                                 <br>
-                                <a href="javascript:void(0);" class="btn btn-success active btn-group-justified btn">Compliance Table</a>
-                                <br>
+                                <!--<a href="javascript:void(0);" class="btn btn-success active btn-group-justified btn">Compliance Table</a>
+                                <br>-->
                                 <a href="javascript:void(0);" class="btn btn-success active btn-group-justified btn" id="btn_modal_inquiry">Inquiry</a>
                                 <br>
                             </div>
