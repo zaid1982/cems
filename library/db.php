@@ -1,5 +1,5 @@
 <?php
-require_once '../library/sql.php';
+require_once dirname(__FILE__).'/../library/sql.php';
 
 class Class_db{
     
@@ -9,8 +9,8 @@ class Class_db{
     
     function __construct()
     {
-        $config = parse_ini_file('../library/config.ini');
-        $this->log_dir = $config['log_dir'];
+        $config = parse_ini_file(dirname(__FILE__).'/../library/config.ini');
+        $this->log_dir = dirname(__FILE__).'/'.$config['log_dir'];
     }
     
     private function __clone() {}
@@ -676,7 +676,7 @@ class Class_db{
         
     public function db_connect() {   
         try {
-            $config = parse_ini_file('../library/config.ini');
+            $config = parse_ini_file(dirname(__FILE__).'/../library/config.ini');
             //$config = parse_ini_file('../library/config_2.ini');
             $dbname = $config['dbname'];    
             $dbhost = $config['dbhost'];    

@@ -1,6 +1,6 @@
 <?php
 
-require_once '../library/db.php';
+require_once dirname(__FILE__).'/../library/db.php';
 try {
     Class_db::getInstance()->db_connect();        
     Class_db::getInstance()->db_beginTransaction();
